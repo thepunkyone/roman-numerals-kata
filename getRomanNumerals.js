@@ -10,6 +10,8 @@ getRomanNumerals = (number) => {
 
         if (number === 9) return 'IX'
 
+        if (number === 40) return 'XL'
+
         if (number > 5 && number < 9) {
             return 'V' + 'I'.repeat(number - 5)
         }
