@@ -51,4 +51,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(90)).toBe('XC')
     })
 
+    it('returns the string C for number 100', () => {
+        expect(getRomanNumerals(100)).toBe('C')
+    })
+
 })
