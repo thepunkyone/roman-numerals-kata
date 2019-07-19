@@ -1,6 +1,6 @@
 const getRomanNumerals = require('../getRomanNumerals');
 
-describe('Convert from Arabic to Roman numerals', () => {
+describe('Convert from Arabic numbers to Roman numerals', () => {
    
     it('returns an empty string when not given a number', () => {
         expect(getRomanNumerals()).toBe('');
@@ -8,5 +8,9 @@ describe('Convert from Arabic to Roman numerals', () => {
 
     it('returns the string I when given the number 1', () => {
         expect(getRomanNumerals(1)).toBe('I')
+    })
+
+    it('returns the string II when given the number 2', () => {
+        expect(getRomanNumerals(2)).toBe('II')
     })
 })
