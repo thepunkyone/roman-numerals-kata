@@ -12,6 +12,10 @@ getRomanNumerals = (number) => {
             return 'IX'
         }
 
+        if (number === 10) {
+            return 'X'
+        }
+
         if (number > 5) {
             return 'V' + 'I'.repeat(number - 5)
         }

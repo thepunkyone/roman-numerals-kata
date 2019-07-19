@@ -28,4 +28,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
     it('returns the string IX for number 9', () => {
         expect(getRomanNumerals(9)).toBe('IX')
     })
+
+    it('returns the string X for number 10', () => {
+        expect(getRomanNumerals(10)).toBe('X')
+    })
 })
