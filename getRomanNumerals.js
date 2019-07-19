@@ -8,20 +8,14 @@ getRomanNumerals = (number) => {
 
         if (number === 5) return 'V'
 
-        if (number === 9) {
-            return 'IX'
-        }
+        if (number === 9) return 'IX'
 
-        if (number === 10) {
-            return 'X'
-        }
-
-        if (number === 20) {
-            return 'XX'
-        }
-
-        if (number > 5) {
+        if (number > 5 && number < 9) {
             return 'V' + 'I'.repeat(number - 5)
+        }
+
+        if (number === 10 || number % 10 === 0) {
+            return 'X'.repeat(number / 10)
         }
 
     }
