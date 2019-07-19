@@ -6,15 +6,9 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals()).toBe('');
     })
 
-    it('returns the string I when given the number 1', () => {
+    it('returns the corresponding multiple of string I when given numbers 1 to 3', () => {
         expect(getRomanNumerals(1)).toBe('I')
-    })
-
-    it('returns the string II when given the number 2', () => {
         expect(getRomanNumerals(2)).toBe('II')
-    })
-
-    it('returns the string III when given the number 2', () => {
         expect(getRomanNumerals(3)).toBe('III')
     })
 
