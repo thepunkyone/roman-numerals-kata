@@ -21,4 +21,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
     it('returns the string IV when given the number 4', () => {
         expect(getRomanNumerals(4)).toBe('IV')
     })
+
+    it('returns the string V when given the number 5', () => {
+        expect(getRomanNumerals(5)).toBe('V')
+    })
 })
