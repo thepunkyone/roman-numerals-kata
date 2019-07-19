@@ -20,11 +20,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(5)).toBe('V')
     })
 
-    it('returns the string VI when given the number 6', () => {
+    it('returns the string V and corresponding multiples of the string I when the number is greater than 5', () => {
         expect(getRomanNumerals(6)).toBe('VI')
-    })
-
-    it('returns the string VI when given the number 7', () => {
         expect(getRomanNumerals(7)).toBe('VII')
     })
 })
