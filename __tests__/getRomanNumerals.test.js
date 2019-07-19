@@ -13,4 +13,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
     it('returns the string II when given the number 2', () => {
         expect(getRomanNumerals(2)).toBe('II')
     })
+
+    it('returns the string III when given the number 2', () => {
+        expect(getRomanNumerals(3)).toBe('III')
+    })
 })
