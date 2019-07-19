@@ -42,11 +42,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(50)).toBe('L')
     })
 
-    it('returns the string LX for number 60', () => {
+    it('returns the string L and corresponding multiple of string X for numbers which are greater than 50 and can be divided by 10', () => {
         expect(getRomanNumerals(60)).toBe('LX')
-    })
-
-    it('returns the string LXX for number 70', () => {
         expect(getRomanNumerals(70)).toBe('LXX')
     })
 })
