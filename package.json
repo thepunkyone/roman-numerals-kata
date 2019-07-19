@@ -1,0 +1,22 @@
+{
+  "name": "roman-numerals-kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepunkyone/roman-numerals-kata.git"
+  },
+  "author": "Vitnija Bluzma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepunkyone/roman-numerals-kata/issues"
+  },
+  "homepage": "https://github.com/thepunkyone/roman-numerals-kata#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
