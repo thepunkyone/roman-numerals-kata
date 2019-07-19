@@ -37,4 +37,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
     it('returns the string XL for number 40', () => {
         expect(getRomanNumerals(40)).toBe('XL')
     })
+
+    it('returns the string L for number 50', () => {
+        expect(getRomanNumerals(50)).toBe('L')
+    })
 })
