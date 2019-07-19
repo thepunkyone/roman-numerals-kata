@@ -45,4 +45,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
     it('returns the string LX for number 60', () => {
         expect(getRomanNumerals(60)).toBe('LX')
     })
+
+    it('returns the string LXX for number 70', () => {
+        expect(getRomanNumerals(70)).toBe('LXX')
+    })
 })
