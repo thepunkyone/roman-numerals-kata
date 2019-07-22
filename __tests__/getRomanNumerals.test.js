@@ -51,16 +51,20 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(90)).toBe('XC')
     })
 
-    it('returns the string C for number 100', () => {
-        expect(getRomanNumerals(100)).toBe('C')
-    })
-
     it('returns the string XXIX for number 29', () => {
         expect(getRomanNumerals(29)).toBe('XXIX')
     })
 
     it('returns the string XLV for number 45', () => {
         expect(getRomanNumerals(45)).toBe('XLV')
+    })
+
+    it('returns the string C for number 100', () => {
+        expect(getRomanNumerals(100)).toBe('C')
+    })
+
+    it('returns the string CD for number 400', () => {
+        expect(getRomanNumerals(400)).toBe('CD')
     })
 
 })

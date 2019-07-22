@@ -3,6 +3,7 @@ const v = 'V'
 const x = 'X'
 const l = 'L'
 const c = 'C'
+const d = 'D'
 
 printSingleDigits = (number) => {
 
@@ -41,6 +42,14 @@ printDoubleDigits = (number) => {
     return ''
 }
 
+printTripleDigits = (number) => {
+    if (number === 400) return c+d
+
+    if (number % 1 === 0 && number < 400) return c
+
+    return ''
+}
+
 getRomanNumerals = (number) => {
     if (number) {
         const numbersArray = number.toString().split('').map(item => Number(item))
@@ -53,7 +62,9 @@ getRomanNumerals = (number) => {
             return printDoubleDigits(numbersArray[0])+printSingleDigits(numbersArray[1])
         }   
 
-        if (number === 100) return c
+        if (numbersArray.length === 3) {
+            return printTripleDigits(number)
+        }
 
     }
     return ''
