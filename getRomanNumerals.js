@@ -43,9 +43,9 @@ printDoubleDigits = (number) => {
 }
 
 printTripleDigits = (number) => {
-    if (number === 400) return c+d
+    if (number === 4) return c+d
 
-    if (number % 1 === 0 && number < 400) return c
+    if (number % 1 === 0 && number < 4) return c
 
     return ''
 }
@@ -63,7 +63,7 @@ getRomanNumerals = (number) => {
         }   
 
         if (numbersArray.length === 3) {
-            return printTripleDigits(number)
+            return printTripleDigits(numbersArray[0])+printDoubleDigits(numbersArray[1])+printSingleDigits(numbersArray[2])
         }
 
     }

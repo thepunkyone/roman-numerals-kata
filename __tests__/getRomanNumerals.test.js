@@ -67,4 +67,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(400)).toBe('CD')
     })
 
+    it('returns the string CD for number 456', () => {
+        expect(getRomanNumerals(456)).toBe('CDLVI')
+    })
+
 })
