@@ -24,18 +24,18 @@ printSingleDigits = (number) => {
 }
 
 printDoubleDigits = (number) => {
-    if (number === 40) return x+l
+    if (number === 4) return x+l
 
-    if (number === 50) return l
+    if (number === 5) return l
 
-    if (number === 90) return x+c
+    if (number === 9) return x+c
 
-    if ((number === 10 || number % 10 === 0) && number < 50) {
-        return x.repeat(number / 10)
+    if ((number === 1 || number % 1 === 0) && number < 5) {
+        return x.repeat(number)
     }
 
-    if (number % 10 === 0 && number > 50) {
-        return l + x.repeat((number - 50) / 10)
+    if (number % 1 === 0 && number > 5) {
+        return l + x.repeat(number - 5)
     }
 
     return ''
@@ -50,7 +50,7 @@ getRomanNumerals = (number) => {
         }
 
         if (numbersArray.length === 2) {
-            return printDoubleDigits(number);
+            return printDoubleDigits(numbersArray[0])+printSingleDigits(numbersArray[1])
         }   
 
         if (number === 100) return c
