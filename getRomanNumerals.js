@@ -1,34 +1,41 @@
+const i = 'I'
+const v = 'V'
+const x = 'X'
+const l = 'L'
+const c = 'C'
+
 printSingleDigits = (number) => {
+
     if (number < 4) {
-        return 'I'.repeat(number)
+        return i.repeat(number)
     }
 
-    if (number === 4) return 'IV'
+    if (number === 4) return i+v
 
-    if (number === 5) return 'V'
+    if (number === 5) return v
 
-    if (number === 9) return 'IX'
+    if (number === 9) return i+x
 
     if (number > 5 && number < 9) {
-        return 'V' + 'I'.repeat(number - 5)
+        return v + i.repeat(number - 5)
     }
 
     return ''
 }
 
 printDoubleDigits = (number) => {
-    if (number === 40) return 'XL'
+    if (number === 40) return x+l
 
-    if (number === 50) return 'L'
+    if (number === 50) return l
 
-    if (number === 90) return 'XC'
+    if (number === 90) return x+c
 
     if ((number === 10 || number % 10 === 0) && number < 50) {
-        return 'X'.repeat(number / 10)
+        return x.repeat(number / 10)
     }
 
     if (number % 10 === 0 && number > 50) {
-        return 'L' + 'X'.repeat((number - 50) / 10)
+        return l + x.repeat((number - 50) / 10)
     }
 
     return ''
@@ -46,7 +53,7 @@ getRomanNumerals = (number) => {
             return printDoubleDigits(number);
         }   
 
-        if (number === 100) return 'C'
+        if (number === 100) return c
 
     }
     return ''
