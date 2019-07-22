@@ -61,6 +61,14 @@ printTripleDigits = (number) => {
     return ''
 }
 
+printThousands = (number) => {
+    if (number) {
+        return m.repeat(number)
+    }
+
+    return ''
+}
+
 getRomanNumerals = (number) => {
     if (number) {
         const numbersArray = number.toString().split('').map(item => Number(item))
@@ -70,15 +78,21 @@ getRomanNumerals = (number) => {
         }
 
         if (numbersArray.length === 2) {
-            return printDoubleDigits(numbersArray[0])+printSingleDigits(numbersArray[1])
+            return printDoubleDigits(numbersArray[0])
+                    +printSingleDigits(numbersArray[1])
         }   
 
         if (numbersArray.length === 3) {
-            return printTripleDigits(numbersArray[0])+printDoubleDigits(numbersArray[1])+printSingleDigits(numbersArray[2])
+            return printTripleDigits(numbersArray[0])
+                    +printDoubleDigits(numbersArray[1])
+                    +printSingleDigits(numbersArray[2])
         }
 
-        if (number === 1000) {
-            return 'M'
+        if (numbersArray.length === 4) {
+            return printThousands(numbersArray[0])
+                    +printTripleDigits(numbersArray[1])
+                    +printDoubleDigits(numbersArray[2])
+                    +printSingleDigits(numbersArray[3])
         }
 
     }

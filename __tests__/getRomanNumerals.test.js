@@ -83,4 +83,12 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(1000)).toBe('M')
     })
 
+    it('returns the string MMVII for number 2008', () => {
+        expect(getRomanNumerals(2008)).toBe('MMVIII')
+    })
+
+    it('returns the string MCMXCIX for number 1999', () => {
+        expect(getRomanNumerals(1999)).toBe('MCMXCIX')
+    })
+
 })
