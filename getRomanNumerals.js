@@ -4,6 +4,7 @@ const x = 'X'
 const l = 'L'
 const c = 'C'
 const d = 'D'
+const m = 'M'
 
 printSingleDigits = (number) => {
 
@@ -45,7 +46,17 @@ printDoubleDigits = (number) => {
 printTripleDigits = (number) => {
     if (number === 4) return c+d
 
-    if (number % 1 === 0 && number < 4) return c
+    if (number === 5) return d
+
+    if (number === 9) return c+m
+
+    if ((number === 1 || number % 1 === 0) && number < 5) {
+        return c.repeat(number)
+    }
+
+    if (number % 1 === 0 && number > 5) {
+        return d + c.repeat(number - 5)
+    }
 
     return ''
 }

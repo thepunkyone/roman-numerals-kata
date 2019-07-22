@@ -67,8 +67,16 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(400)).toBe('CD')
     })
 
-    it('returns the string CD for number 456', () => {
+    it('returns the string CDLVI for number 456', () => {
         expect(getRomanNumerals(456)).toBe('CDLVI')
+    })
+
+    it('returns the string DLXXIII for number 573', () => {
+        expect(getRomanNumerals(573)).toBe('DLXXIII')
+    })
+
+    it('returns the string CMLXXX for number 980', () => {
+        expect(getRomanNumerals(980)).toBe('CMLXXX')
     })
 
 })
