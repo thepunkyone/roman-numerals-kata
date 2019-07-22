@@ -32,11 +32,11 @@ printDoubleDigits = (number) => {
 
     if (number === 9) return x+c
 
-    if ((number === 1 || number % 1 === 0) && number < 5) {
+    if (number < 5) {
         return x.repeat(number)
     }
 
-    if (number % 1 === 0 && number > 5) {
+    if (number > 5) {
         return l + x.repeat(number - 5)
     }
 
@@ -50,11 +50,11 @@ printTripleDigits = (number) => {
 
     if (number === 9) return c+m
 
-    if ((number === 1 || number % 1 === 0) && number < 5) {
+    if (number < 5) {
         return c.repeat(number)
     }
 
-    if (number % 1 === 0 && number > 5) {
+    if (number > 5) {
         return d + c.repeat(number - 5)
     }
 
