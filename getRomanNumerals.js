@@ -77,6 +77,10 @@ getRomanNumerals = (number) => {
             return printTripleDigits(numbersArray[0])+printDoubleDigits(numbersArray[1])+printSingleDigits(numbersArray[2])
         }
 
+        if (number === 1000) {
+            return 'M'
+        }
+
     }
     return ''
 }

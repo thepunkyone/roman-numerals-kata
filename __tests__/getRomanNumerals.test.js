@@ -79,4 +79,8 @@ describe('Convert from Arabic numbers to Roman numerals', () => {
         expect(getRomanNumerals(980)).toBe('CMLXXX')
     })
 
+    it('returns the string M for number 1000', () => {
+        expect(getRomanNumerals(1000)).toBe('M')
+    })
+
 })
